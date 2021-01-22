@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sujets_de_discussions",
+  "info": {
+    "name": "sujets de discussion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "sujets_de_discussions",
+      "dominant": true
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  }
+}
