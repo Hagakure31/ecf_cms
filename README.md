@@ -1,6 +1,9 @@
 # Strapi application
 
-A quick description of your strapi application
+Wordpress :
+https://ecfsimplon.wordpress.com/ 
+
+
 
 
 Récupérer token jwt au préalable en passant par : POST http://localhost:1337/auth/local avec pour body en JSON : 
